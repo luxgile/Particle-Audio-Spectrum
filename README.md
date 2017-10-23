@@ -7,4 +7,3 @@ Includes:
 - Default scene view
 - 3 Different Particle Systems
 - 4 Visualizer Spectrum Prefabs
-- Post Proccesing
