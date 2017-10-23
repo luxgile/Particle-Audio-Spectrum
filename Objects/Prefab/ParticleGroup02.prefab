@@ -1,0 +1,211 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1397923191535250}
+  m_IsPrefabParent: 1
+--- !u!1 &1397923191535250
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4760181986787462}
+  m_Layer: 0
+  m_Name: ParticleGroup02
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1418757420094406
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4112597153298540}
+  - component: {fileID: 114423726519667588}
+  m_Layer: 0
+  m_Name: Particles07
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1652650879573614
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4468134221626204}
+  - component: {fileID: 114481297647129412}
+  m_Layer: 0
+  m_Name: Particles06
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4112597153298540
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1418757420094406}
+  m_LocalRotation: {x: 0.5, y: -0.5, z: -0.5, w: 0.5}
+  m_LocalPosition: {x: 0, y: 0, z: 80}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4760181986787462}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: -90}
+--- !u!4 &4468134221626204
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1652650879573614}
+  m_LocalRotation: {x: 0.5, y: -0.5, z: -0.5, w: 0.5}
+  m_LocalPosition: {x: 0, y: 0, z: 80}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4760181986787462}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: -90}
+--- !u!4 &4760181986787462
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1397923191535250}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4468134221626204}
+  - {fileID: 4112597153298540}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114423726519667588
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1418757420094406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 098b9ca5e01afca41bd820ece7249f94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioReader: {fileID: 0}
+  _AudioVisualizationType: 3
+  _ParticleEffectType: 2
+  rotation: 1
+  rotateSensitivityRange: {x: 0, y: 512}
+  rotateSensitivity: 0
+  rotateAmmount: {x: 0, y: 0, z: 100}
+  scale: 1
+  scaleSensitivityRange: {x: 0, y: 30}
+  scaleSensitivity: 0
+  scaleAmmount: 100
+  scaleSmooth: 0.4
+  color: 1
+  minColor: {r: 0.7647059, g: 0.89290065, b: 1, a: 1}
+  maxColor: {r: 0, g: 1, b: 0.13103461, a: 1}
+  inverted_minColor: {r: 0, g: 1, b: 0.42068958, a: 1}
+  inverted_maxColor: {r: 0.034482475, g: 0, b: 1, a: 1}
+  maxColorAmmount: 6
+  mulColorAmmount: 100
+  inverted_maxColorAmmount: 10
+  inverted_mulColorAmmount: 100
+  movement: 1
+  movXAmmount: 15
+  movXSpeed: 2.5
+  movYAmmount: 5
+  movYSpeed: 7.5
+  ps_Visualization: {fileID: 1744633016059586, guid: 248985f5f2dd2d3448c0b94388321b34,
+    type: 2}
+  parent_Visualization: {fileID: 4112597153298540}
+  objectOffSet: 7.5
+  centered: 1
+  particleColor: {r: 0, g: 0.8758622, b: 1, a: 1}
+  particleColorIntensity: 1.3
+  audioSensibility: 0
+  audioMultiplier: 30
+  audioMax: 10
+  audioSmooth: 0.9
+  duplicateInverted: 0
+  inverted_particleColor: {r: 0.9903652, g: 1, b: 0.30147058, a: 1}
+  inverted_particleColorIntensity: 1
+  inverted_audioSensibility: 0
+  inverted_audioMultiplier: 3
+  inverted_audioMax: 10
+  inverted_audioSmooth: 0.9
+--- !u!114 &114481297647129412
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1652650879573614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 098b9ca5e01afca41bd820ece7249f94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioReader: {fileID: 0}
+  _AudioVisualizationType: 3
+  _ParticleEffectType: 2
+  rotation: 1
+  rotateSensitivityRange: {x: 0, y: 512}
+  rotateSensitivity: 0
+  rotateAmmount: {x: 0, y: 0, z: 100}
+  scale: 1
+  scaleSensitivityRange: {x: 0, y: 30}
+  scaleSensitivity: 0
+  scaleAmmount: 50
+  scaleSmooth: 0.4
+  color: 1
+  minColor: {r: 0.7647059, g: 0.89290065, b: 1, a: 1}
+  maxColor: {r: 1, g: 0.8896551, b: 0, a: 1}
+  inverted_minColor: {r: 0.66176474, g: 0.91602427, b: 1, a: 1}
+  inverted_maxColor: {r: 1, g: 0.72413796, b: 0, a: 1}
+  maxColorAmmount: 4
+  mulColorAmmount: 100
+  inverted_maxColorAmmount: 10
+  inverted_mulColorAmmount: 100
+  movement: 1
+  movXAmmount: 15
+  movXSpeed: 2.5
+  movYAmmount: 5
+  movYSpeed: 7.5
+  ps_Visualization: {fileID: 1744633016059586, guid: 248985f5f2dd2d3448c0b94388321b34,
+    type: 2}
+  parent_Visualization: {fileID: 4468134221626204}
+  objectOffSet: 10
+  centered: 1
+  particleColor: {r: 0, g: 0.8758622, b: 1, a: 1}
+  particleColorIntensity: 1.3
+  audioSensibility: 0
+  audioMultiplier: 30
+  audioMax: 10
+  audioSmooth: 0.9
+  duplicateInverted: 0
+  inverted_particleColor: {r: 0.9903652, g: 1, b: 0.30147058, a: 1}
+  inverted_particleColorIntensity: 1
+  inverted_audioSensibility: 0
+  inverted_audioMultiplier: 3
+  inverted_audioMax: 10
+  inverted_audioSmooth: 0.9
